@@ -59,7 +59,7 @@ def python_text(text="is cool"):
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """
-    Displays '<n> is a number' only if <n> is an integer at the /number/<n> route.
+    Displays '<n> is a number' only if <n> is an int at the /number/<n> route.
     """
     return "{} is a number".format(n)
 
@@ -85,4 +85,3 @@ def number_odd_or_even(n):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
